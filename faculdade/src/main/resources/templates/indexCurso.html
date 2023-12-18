@@ -1,0 +1,58 @@
+<html xmlns:th=" http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>View</title>
+</head>
+<style>
+    body{
+    background-color: black;
+    }
+
+    h1{
+    color: white;
+    }
+    .row{
+        width: 500px;
+        height: 700px;
+        background-color: #4D4DFF;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+    p{
+    padding-left: 10px;
+    color: white;
+    }
+    button{
+        width: 190px;
+        height: 40px;
+        border-radius: 16px;
+        background-color: #4D4DFF;
+        border: none;
+
+    }
+    a{
+    color: white;
+    text-decoration: none;
+    }
+
+</style>
+<body>
+        <!-- http://http://localhost:8086/cursos</!-->
+
+        <h1>Lista de Cursos</h1>
+        <h3><a href="/cadastrarCurso">Cadastrar Curso</a></h3>
+
+        <div th:each="cursos : ${cursos}">
+            <div class="row">
+                <p><b>Código Curso :</b> <span th:text="${cursos.codigoCurso}"></span></p>
+                <p><b>Nome :</b> <span th:text="${cursos.nomeCurso}"></span></p>
+                <p><b>Data Cadastro :</b> <span th:text="${cursos.dataCadastro}"></span></p>
+                <p><b>Carga Horária :</b> <span th:text="${cursos.cargaHoraria}"></span></p>
+                <p><b>Alunos :</b> <span th:text="${cursos.alunos}"></span></p>
+
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th=" http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title>Alunos</title>
+</head>
+
+<style>
+        body{
+            background-color: #A8A8A8;
+        }
+        h1{
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+        form{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            color: white;
+
+        }
+        input{
+            width: 200px;
+            height: 25px;
+            border-radius: 20px;
+            border: 2px solid #4D4DFF;
+            padding: 2px;
+
+        }
+        button{
+        margin-top: 8px;
+        width: 150px;
+        height: 25px;
+        border-radius: 20px;
+        border: none;
+        background-color: #4D4DFF;
+        color: white;
+        }
+</style>
+<body>
+        <!--http://localhost:8084/cadastrarAluno</!-->
+
+        <h1>Alunos Cadastro</h1>
+        <form method="post">
+            Nome: <input type="text" value="" name="nome">
+            Sobrenome: <input type="text" value="" name="sobrenome">
+            Cpf: <input type="text" value="" name="cpf">
+            Endereco: <input type="text" value="" name="endereco">
+            Email: <input type="text" value="" name="email">
+            Cep: <input type="text" value="" name="cep">
+            Telefone: <input type="text" value="" name="telefone">
+            Codigo Curso <input type="text" value="" name="cursos">
+
+
+            <button type="submit">Salvar</button>
+        </form>
+
+</body>
+</html>

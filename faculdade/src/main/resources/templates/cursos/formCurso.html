@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th=" http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title>Cursos</title>
+</head>
+<style>
+    body{
+    background-color: black;
+    }
+    h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    form{
+        color: white;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+    }
+    input{
+        width: 200px;
+        height: 25px;
+        border-radius: 20px;
+        border: 2px solid #4D4DFF;
+        padding: 2px;
+    }
+    button{
+        margin-top: 8px;
+        width: 150px;
+        height: 25px;
+        border-radius: 20px;
+        border: none;
+        background-color: #4D4DFF;
+        color: white;
+
+    }
+
+
+</style>
+
+<body>
+        <h1>Curso Cadastro</h1>
+        <form method="post">
+            Nome: <input type="text" value="" name="nomeCurso">
+            Carga Horária: <input type="text" value="" name="cargaHoraria">
+            Data Cadastro: <input type="datetime-local" value="" name="dataCadastro">
+            <button type="submit">Salvar</button>
+        </form>
+</body>
+</html>
