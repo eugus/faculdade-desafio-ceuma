@@ -73,7 +73,13 @@ public class Curso implements Serializable {
         return alunos;
     }
 
-
-
-
+    @Override
+    public String toString() {
+        return "Curso{" +
+                "codigoCurso=" + codigoCurso +
+                ", nomeCurso='" + nomeCurso + '\'' +
+                ", dataCadastro=" + dataCadastro +
+                ", cargaHoraria=" + cargaHoraria +
+                '}';
+    }
 }

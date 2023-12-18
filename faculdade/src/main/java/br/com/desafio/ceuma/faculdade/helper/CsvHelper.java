@@ -57,7 +57,7 @@ public class CsvHelper {
                         ("Email: " + alunos1.getEmail()),
                         ("Endereço: " + alunos1.getEndereco()),
                         ("Telefone: " + alunos1.getTelefone()),
-                        ("Curso: " + alunos1.getCursos())
+                        ("Curso: " + alunos1.getCursos().toString())
                 );
                 csvPrinter.printRecord(data);
             }
